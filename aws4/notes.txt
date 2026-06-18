@@ -1,0 +1,17 @@
+[
+    [
+        "nat-09f60e9ceac1a0bad",
+        "available"
+    ],
+    [
+        "nat-0e03134fb39ddd697",
+        "available"
+    ]
+]
+[
+    "13.228.33.252",
+    "47.130.217.2"
+]
+[
+    "739951718815.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/haririabd"
+]
