@@ -1,0 +1,12 @@
+cloudflare ns
+ns1 : aarav.ns.cloudflare.com
+ns2 : aspen.ns.cloudflare.com
+
+
+portfolio awam
+haririabd.pages.dev
+ghpages.haririabd.my
+
+portfolio private
+private-site-5gp.pages.dev
+privatepage.haririabd.my
