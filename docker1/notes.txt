@@ -1,0 +1,11 @@
+Docker version 29.5.3, build d1c06ef
+IMAGE                                  ID             DISK USAGE   CONTENT SIZE   EXTRA
+caddy:2-alpine                         834468128c76       87.9MB         24.1MB        
+hello-world:latest                     96498ffd522e       25.9kB         9.49kB        
+mcr.microsoft.com/dotnet/aspnet:10.0   55e37c7795bf        340MB           96MB        
+mcr.microsoft.com/dotnet/sdk:10.0      8a90a473da52       1.26GB          329MB        
+nginx:alpine                           54f2a904c251       93.3MB         26.9MB        
+nginx:latest                           ec4ed8b5299e        241MB           66MB        
+node:20-slim                           2cf067cfed83        293MB         74.1MB        
+postgres:17                            5b96f1a16bd9        645MB          167MB        
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
