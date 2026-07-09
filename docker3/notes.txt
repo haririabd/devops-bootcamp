@@ -1,0 +1,12 @@
+739951718815.dkr.ecr.ap-southeast-1.amazonaws.com/devops-bootcamp/haririabd:latest
+NETWORK ID     NAME      DRIVER    SCOPE
+af39f93a2261   arena     bridge    local
+b39f219ee515   bridge    bridge    local
+bd4ea59de0e5   host      host      local
+ff3f980e38ab   none      null      local
+IMAGE                                   ID             DISK USAGE   CONTENT SIZE   EXTRA
+ghcr.io/infratify/arena-avatar:latest   4a5bd684de1e        201MB         49.1MB   U
+ghcr.io/infratify/arena-server:latest   78884fcfdf61        195MB         48.7MB   U
+redis:latest                            2838d5524559        208MB         56.3MB   U
+DRIVER    VOLUME NAME
+local     me
