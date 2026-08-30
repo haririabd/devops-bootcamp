@@ -6,6 +6,18 @@ terraform {
       version = "~> 6.0"
     }
   }
+
+# use this backend to host the statefile in s3 bucket. without this, it's local
+# After, run:
+# terraform init -migrate-state in terminal
+# rm terraform.tfstate terraform.tfstate.backup
+# terraform plan
+  backend "s3" {
+    bucket       = "bootcamp-2026-haririabd"
+    key          = "terraform2/terraform.tfstate"
+    region       = "ap-southeast-1"
+    use_lockfile = true
+  }
 }
 
 provider "aws" {
