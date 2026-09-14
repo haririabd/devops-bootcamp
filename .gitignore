@@ -93,3 +93,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/ssh,linux,windows,dotenv
+inventory.ini
