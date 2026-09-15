@@ -20,6 +20,13 @@ module "devops-public-sg" {
       from_port   = 22
       to_port     = 22
     }
+
+    monitor = {
+      cidr_ipv4   = "10.0.0.136/32"
+      ip_protocol = "tcp"
+      from_port   = 9100
+      to_port     = 9100
+    }
   }
 
   egress_rules = {

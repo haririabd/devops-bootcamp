@@ -19,6 +19,7 @@ module "webserver" {
   ami                    = data.aws_ami.my_ami.id
   instance_type          = "t3.micro"
   subnet_id              = module.my_vpc.public_subnets[0]
+  private_ip             = "10.0.0.5"
   create_security_group  = false
   vpc_security_group_ids = [module.devops-public-sg.id]
   key_name               = "Zenbook-Hariri"
@@ -40,11 +41,15 @@ module "controller" {
   ami                    = data.aws_ami.my_ami.id
   instance_type          = "t3.micro"
   subnet_id              = module.my_vpc.private_subnets[0]
+  private_ip             = "10.0.0.135"
   create_security_group  = false
   vpc_security_group_ids = [module.devops-private-sg.id]
   key_name               = "Zenbook-Hariri"
   tags                   = { Name = "controller" }
   iam_instance_profile   = data.aws_iam_instance_profile.my_ssm_profile.name
+  user_data              = templatefile("${path.module}/controller-userdata.sh", {
+    requirements_yaml = file("${path.module}/../ansible/requirements.yaml")
+  })
 #   root_block_device      = { size = 16 }
 }
 
@@ -55,6 +60,7 @@ module "monitor" {
   ami                    = data.aws_ami.my_ami.id
   instance_type          = "t3.micro"
   subnet_id              = module.my_vpc.private_subnets[0]
+  private_ip             = "10.0.0.136"
   create_security_group  = false
   vpc_security_group_ids = [module.devops-private-sg.id]
   key_name               = "Zenbook-Hariri"
