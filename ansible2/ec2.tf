@@ -19,6 +19,7 @@ module "node1" {
   vpc_security_group_ids = [module.my_sg.id]
   key_name               = "Zenbook-Hariri"
   tags                   = { Name = "node1" }
+  root_block_device      = { size = 16 }
 }
 
 module "node2" {
@@ -32,4 +33,5 @@ module "node2" {
   vpc_security_group_ids = [module.my_sg.id]
   key_name               = "Zenbook-Hariri"
   tags                   = { Name = "node2" }
+  root_block_device      = { size = 16 }
 }
