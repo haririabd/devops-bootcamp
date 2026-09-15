@@ -1,0 +1,3 @@
+roles:
+ - name: geerlinguy.docker
+   version: "8.0.0"
